@@ -1,1 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap');
 
+/* GENERALITES */
+
+html {
+    height: 100%;
+}
+
+body {
+    /* background: linear-gradient(130deg, rgba(3,4,94,1) 0%, rgba(0,0,0,1) 100%); */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background: #000629;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 50%; 
+    color:rgb(255, 255, 255, 0.90);
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+} 
+
+
+
+
+
+
+/* BOLD <b> */
+
+b {
+    font-weight: 400;
+    color:rgb(255, 255, 255,.75);
+}
+
+
+
+
+
+/* SELECTION */
+
+::-moz-selection {
+    color: white;
+    background: rgb(58, 84, 235,.3);
+}
+  
+::selection {
+    color: white;
+    background: rgb(58, 84, 235,.3);
+}
+
+
+
+
+
+
+
+/* MAIN */
+.main {
+    padding: 120px 230px 0px 230px;
+    display: flex;
+}
+
+
+
+/* MAIN GAUCHE */
+
+.main-left {
+    width: 50%;
+    padding-right: 20px;
+    height: 100vh;
+}
+
+.main-left .main-left-content {
+    position: fixed;
+}
+
+.main-left h1 {
+    font-size: 50px;
+}
+.main-left h3 {
+    margin-top: 5px;
+    font-weight: 500;
+}
+.main-left p {
+    margin-top: 25px;
+    color: rgba(146, 169, 199, 0.7);
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+
+
+
+
+
+/* MAIN DROIT */
+
+.main-right {
+    width: 50%;
+}
+
+.main-right .bio span {
+    color: rgba(146, 169, 199, 0.7);
+    font-weight: 400;
+    line-height: 1.625;
+    font-size: 17px;
+    
+}
+
+.main-right .bio {
+    padding: 0 15px 0 15px;
+}
+
+
+
+
+/* SOCIAL MEDIA */
+.social-media {
+    position: fixed;
+    bottom: 120px;
+}
+.social-media a {
+    color:rgba(146, 169, 199, 0.7);
+    text-decoration: none;
+}
+.social-media a:hover {
+    color:white;
+}
+.social-media a:first-child {
+    padding-right: 10px;
+}
+.social-media a:not(:first-child) {
+    padding: 0 10px 0 10px;
+}
+
+
+
+
+
+/* PROJETS */
+
+.projects {
+    margin-top:100px
+    
+}
+
+
+
+
+
+/* OBJET CLASSE PROJETS */
+
+.project {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border:1px solid rgba(146, 169, 199, 0.03);
+    background-color: rgba(146, 169, 199, .02);
+    transition: .2s;
+}
+
+.project-title { /* titre */
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.project-type { /* type */
+    margin-top:5px;
+
+    font-weight: 500;
+    font-size: 15px ;
+    color:rgba(146, 169, 199, 0.5);
+}
+
+.project-desc { /* description */
+    margin-top:15px;
+    font-weight: 400;
+    font-size: 15px ;
+
+    line-height: 1.625;
+    color:rgba(146, 169, 199, 0.7);
+}
+
+.project:hover { /* survol */
+    cursor:pointer;
+    transition: .2s;
+    border:1px solid rgba(146, 169, 199, 0.07);
+    background-color: rgba(146, 169, 199, .05);
+}
+
+.project:hover .project-title { /* survol */
+    color:rgb(58, 84, 235);
+}
+
+.project-langages { /* langages de prog */
+    margin-top: 20px;
+    display: flex;
+}
+.project-langages li {
+    background-color: rgba(1, 13, 80,.8);
+    color:rgb(58, 84, 235);
+    border-radius: 100px;
+    padding: 8px 10px 8px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+}
+.project-langages li:first-child {
+    margin-right: 4px;
+}
+.project-langages li:not(:first-child) {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+
+
+/* LINK */
+a {
+    text-decoration: none;
+    color:unset
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    display: grid;
+    margin-top: 110px;
+    margin-bottom: 120px;
+    text-align: end;
+    color:rgba(146, 169, 199, 0.5);
+    font-weight: 300;
+    font-size: 12px;
+}
